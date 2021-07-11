@@ -1,10 +1,10 @@
-drop table if exists messages;
-create table messages
+DROP TABLE IF EXISTS messages;
+CREATE TABLE messages
 (
-    id           int(11)                       not null auto_increment,
-    text         varchar(128) collate utf8_bin not null default '',
-    created_date datetime                      not null default current_timestamp,
-    primary key (id)
-) engine InnoDB
-  default charset = utf8
+    id           INT(11)                       NOT NULL AUTO_INCREMENT,
+    text         VARCHAR(128) collate utf8_bin NOT NULL DEFAULT '',
+    created_date DATETIME                      NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+) ENGINE InnoDB
+  DEFAULT charset = utf8
   collate = utf8_bin
